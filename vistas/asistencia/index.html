@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navegador {
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .imagen-circular {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-image: url(../images.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .titulo {
+            margin: 0;
+            margin-left: 80px;
+            font-size: 40px;
+        }
+
+        .cerrar-sesion {
+            text-decoration: none;
+            color: black;
+            background-color: rgba(255, 255, 47);
+            margin-left: 10px;
+            padding: 8px 25px;
+            border-radius: 5px;
+        }
+
+        .otro-titulo {
+            background-color: rgba(255, 255, 47);
+            padding: 3px;
+            text-align: center;
+        }
+
+        .otro-titulo h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, button {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="datetime"] {
+            width: calc(100% - 16px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        form input[type="submit"] {
+            background-color: #fbff00;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 15px;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body class="fondo">
+    <nav class="navegador">
+        <div class="imagen-circular"></div>
+        <h1 class="titulo">Chempanada</h1>
+        <a href="../../index.php" class="cerrar-sesion">Cerrar Sesión</a>
+    </nav>
+    <div class="otro-titulo">
+        <h2>Menu Asistencias</h2>
+    </div>
+    <form action="procesar.php" method="post">
+        <label for="empleado">Empleado:</label>
+        <input type="text" name="empleado" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" required>
+
+        <label for="fechaentrada">Fecha entrada:</label>
+        <input type="datetime" name="fechaentrada" id="fechaentrada" required>
+
+        <script>
+            var fechaActual = new Date();
+            var formattedDate = fechaActual.toISOString().slice(0, 16);
+            document.getElementById('fechaentrada').value = formattedDate;
+        </script>
+
+        <input type="submit" value="Registrar Asistencia">
+    </form>
+    <?php include 'mostrar_asistencias.php'; ?>
+</body>
+</html>

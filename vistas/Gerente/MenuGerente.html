@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba</title>
+    <!-- <link rel="stylesheet" href="config/estilo.css" type="text/css"> -->
+    <link rel="stylesheet" href="/chempa/config/estilo.css" type="text/css">
+
+</head>
+<body class="fondo">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navegador {
+    background-color: #000000; /* Color de fondo del navegador */
+    color: white; /* Color del texto en el navegador */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.imagen-circular {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Crea una imagen circular */
+    background-image: url('../usuarioVentas/images.png'); /* Ruta de tu imagen circular */
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    margin: 0;
+    margin-left: 80px;
+    font-size: 40px;
+}
+
+.cerrar-sesion {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 47);
+    margin-left: 10px;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.otro-titulo {
+    background-color: rgba(255, 255, 47); /* Cambia el color de fondo del segundo título */
+    padding: 3px;
+    text-align: center;
+}
+
+.otro-titulo h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+    </style>
+    <nav class="navegador">
+        <div class="imagen-circular"></div>
+        <h1 class="titulo">Chempanada</h1>
+        <a href="../../index.php" class="cerrar-sesion">Cerrar Sesión</a>
+    </nav>
+    <div class="otro-titulo">
+        <h2>Menu Gerente</h2>
+    </div>
+    <div class="contPag">
+        <a href="../usuarioVentas/index.html" class="textoOpciones">
+            <div class="card-Opciones">
+                <img src="../../img/usuario.png" height="150px">
+                <br>
+                <br>
+                <br>
+                <div class="card-texto" align="center">
+                   Contro de ventas
+                </div>
+            </div>
+        </a>
+        <a href="../ControlStock/Index.html" class="textoOpciones">
+            <div class="card-Opciones">
+                <img src=" ../../img/usuario.png " height="150px">
+                <br>
+                <br>
+                <br>
+                <div class="card-texto" align="center">
+                    Ver Stock
+                </div>
+            </div>
+        </a>
+        <a href="../Proveedores/index.php" class="textoOpciones">
+            <div class="card-Opciones">
+                <img src="../../img/usuario.png" height="150px">
+                <br>
+                <br>
+                <br>
+                <div class="card-texto" align="center">
+                   Ver Proveedores
+                </div>
+            </div>
+        </a>
+        <a href="../asistencia/mostrar_asistencias.php" class="textoOpciones">
+            <div class="card-Opciones">
+                <img src="../../img/usuario.png" height="150px">
+                <br>
+                <br>
+                <br>
+                <div class="card-texto" align="center">
+                   Asistencia
+                </div>
+            </div> 
+        </a>  
+        
+</body>
+</html>

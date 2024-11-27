@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+:root{
+    --white:#fff;
+    --lila: #caa1dd;
+    --gris: #dbcdd2;
+    --lila2:#906aa0;
+
+}
+body{
+    background-color: var(--gris);
+    font-family:'Alkatra', cursive;
+  
+}
+.contenedor{
+    width: 1240px;
+    border:1px solid var(--white);
+    max-width: 100%;
+    margin: 50px auto 0;
+    display:  grid;
+    grid-template-columns: 190px 800px 250px;
+    padding: 25px;
+    border-radius: 25px;
+    
+
+
+}
+.contenedor .menu{
+    background-color: var(--white);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.contenedor .ticket{
+    background-color: var(--white);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.contenedor .centro{
+    caret-color: var(--gris);
+    border-left: 1px solid var(--gris);
+    border-right: 1px solid var(--gris);
+
+}
+.menu .logo{
+    padding: 20px;
+    font-family:'DynaPuff', cursive; 
+    font-size: xx-large;
+    height: 40px;
+
+}
+.menu .logo span{
+    color: var(--lila2);
+
+}
+.menu ul{
+    padding:20px 0px 20px;
+    list-style: none;
+    border-bottom: 1px solid var(--lila2);
+}
+.menu ul li{
+    padding: 10px 0;
+
+}
+.menu ul li i{
+    margin-right:12px ;
+}
+.menu ul li.active{
+    color: var(--lila);
+    border-right: 2px solid var(--lila2);
+
+}
+.menu ul li.hover{
+    color: var(--lila);
+    border-right: 2px solid var(--lila2);
+
+}
+.centro .lupa{
+    background-color: var(--white);
+    padding: 20px;
+    height: 40px;
+
+
+}
+.centro .lupa .form{
+    width: max-content;
+    border: 1px solid var(--lila2);
+    border-radius: 15px;
+    padding-left: 15px;
+    color: var(--lila);
+
+ }
+ 
+ .centro .lupa .form input{
+   border: none;
+   padding: 0 10px;
+   outline: none;
+   width: 580px;
+
+    
+}
+.centro .lupa .form button{ 
+  border: none;
+  background-color: var(--lila2);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 12px;
+  
+ }
+
+ .centro h2{
+    padding-left: 30px;
+ }
+ .centro .list{
+    padding: 0 23.5px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0px;
+    row-gap: 10px;
+ }
+ .item{
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 55% auto;
+    padding: 15px;
+    column-gap: 10px;
+    border-radius: 15px;
+    width: 300px;
+ }
+ .item .img img{
+   height: 150px;
+ }
+ .item .img {
+    background-color: rgb(212, 214, 214);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .item .content .title{
+    font-weight: bold;
+    font-size: 21px;
+  }
+.item .content .descrip{
+    font-size: small;
+    opacity:0.7 ;
+    margin-top: 5px;
+
+}
+.item .content .precio{
+    color: var(--lila2);
+    letter-spacing: 2px;
+    font-weight: 520;
+
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+.item .count{
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    border: 1px solid var(--lila2);
+    padding: 5px 10px;border: 1px solid #caa1dd;
+    outline: none;
+    margin-top:15px;
+    background-color: #f0f0f0;
+
+}
+.item .content .add{
+    margin-top:5px;
+    background-color: var(--lila2);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.ticket .item{
+    transition: 0.5s;
+    border-bottom: 1px solid var(--gris);
+}
+.ticket .name{
+    padding: 20px;
+    height: 40px;
+    font-weight: bold;
+    font-size: xx-large;
+    border-bottom: 1px solid var(--lila2);
+    
+}
+.danger{
+    box-shadow: 0 10px 10px var(--lila2);
+    transform: translate(0,-10px );
+    
+}
+.ticket .add{
+    display: block;
+    
+}
+
+
+.cobrar{
+    color: #ffffff;
+    background-color: #906aa0;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 13px;
+    font-size: 17px;
+    margin-left: 110px;
+
+}
+.vaciar{
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-top: 10px;
+
+}
+h4{
+    font-size: 17px;
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h5{
+    font-size: 15px;
+    font-weight: 530;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}

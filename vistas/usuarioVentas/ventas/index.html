@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Selección de Fechas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pantalla de inicio</title>
+</head>
+<body>
+    <style>
+        /* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fbff00;
+    color: bl;
+}
+
+/* Estilos generales del nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 0%);
+  padding: 10px;
+}
+
+/* Estilos para la imagen de usuario circular */
+.nav-left img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Estilos para el título "Cheempanada" */
+.nav-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-center h1 {
+  margin: 0;
+  font-size: 45px;
+  color: white;
+}
+
+/* Estilos para el botón "Cerrar Sesión" */
+.btn-cerrar-sesion {
+  padding: 10px 16px;
+  background-color: #fbff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 200px;
+}
+
+/* Estilos para posicionar el botón en la esquina derecha */
+.nav-right {
+  position: relative;
+}
+
+.btn-cerrar-sesion {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.opciones{
+  background-color: #fbff00;
+    height:40px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-left: -10px;
+    width: 100%;
+    justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-start {
+            background-color: black;
+        }
+        .btn-logout {
+           background-color: black;
+        } 
+        .buttons-container{
+margin: auto;
+        }
+
+    </style>
+
+<nav>
+    <div class="nav-left">
+      <img src="../images.png" alt="Imagen de Usuario">
+    </div>
+    <div class="nav-center">
+      <h1>Cheempanadas</h1>
+    </div>
+    <div class="nav-right">
+      <button class="btn-cerrar-sesion">Cerrar Sesión</button>
+    </div>
+  </nav>
+    <div class="opciones">
+<div>Bienvenido usuario a la Seccion de Ventas</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Selecciona un Rango de Fechas</h1>
+        <form method="POST" action="../ventas/prueba.php">
+          <label for="fechaInicio">Fecha de Inicio:</label>
+          <input type="date" id="fechaInicio" name="fechaInicio">
+          <label for="fechaFin">Fecha de Fin:</label>
+          <input type="date" id="fechaFin" name="fechaFin">
+          <input type="submit" value="Buscar">
+      </form>
+      
+        <a href="../index.html" class="btn btn-logout">Salir</a>
+    </div>
+
+      
+    
+   
+</body>
+</html>

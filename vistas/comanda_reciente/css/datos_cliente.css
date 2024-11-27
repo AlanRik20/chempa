@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+
+.button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    border-color: #b883b5;
+    padding: 10px 20px;
+    height: 36px;
+    margin-top: 275px;
+    margin-left: -200px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.logo img{
+    height: 35px;
+    
+
+}
+.logo h3{
+    font-size: 25px;
+}
+
+  a {
+    color: #000;
+  }
+  
+  
+  /* header */
+  
+  .header {
+    background-color:rgb(166, 120, 176);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin-top: -200px;
+  }
+  
+  
+  
+  .header .logo {
+    float: left;
+    font-size: 35px;
+    padding: 10px 20px;
+    text-decoration: none;
+  
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #f7f3f3;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #fff7fe;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: rgb(179, 149, 185);
+	width: 120%;
+	visibility: hidden;
+
+	
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+  body{
+      background: hsl(208, 100%, 97%) ;
+      font-family: 'Open sans';
+  }
+  
+  /* FORMULARIO =================================== */
+  
+  .container{
+      width: 580px;
+      height: 350px;
+      margin: 50px auto;
+      margin-top: 200px;
+      display: flex;
+      background: #fffeff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+      text-align: left;
+  }
+
+
+  
+ 
+  label{
+    color: rgb(3, 3, 3);
+    margin-left: 25px;
+  }
+
+  input{
+    margin-right: 100px;
+  }
+
+  h2{
+    text-align: center;
+    margin-top: 25px;
+  }
